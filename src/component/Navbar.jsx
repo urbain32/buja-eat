@@ -1,4 +1,4 @@
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai';
 export default function Navbar() {
   return (
     //   we used [] to put our own px
@@ -16,7 +16,15 @@ export default function Navbar() {
           <p className='p-2'>Pickup</p>
         </div>
       </div>
-      
+      {/* search side */}
+      <div className='bg-gray-200 flex items-center rounded-full px-2 w-[200px] sm:w-[400px] lg:w-[500px] '>
+        <AiOutlineSearch size={25} />
+        <input
+          className='bg-transparent p-2 w-full focus:outline-none '
+          type='text'
+          placeholder='Search...'
+        />
+      </div>
     </div>
   );
 }
