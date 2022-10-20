@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { data } from '../data/data.js';
 export default function Food() {
-  console.log(data);
+  //   console.log(data);
+  const [foods, setFoods] = useState(data);
   return (
     <div className='max-w-[1640px] m-auto px-4 py-12  '>
       <h1 className='text-orange-600 font-bold text-4xl text-center '>
@@ -47,6 +49,29 @@ export default function Food() {
             </button>
           </div>
         </div>
+      </div>
+      {/* display foods */}
+      <div className='grid grid-cols-2 lg:grid-cols-4 pt-4 gap-6 '>
+        {foods.map((food, index) => (
+          <div
+            key={index}
+            className='border shadow-2xl hover:scale-105 duration-300 rounded-lg '
+          >
+            <img
+              className='w-full shadow-lg h-[300px] object-cover rounded-t-lg '
+              src={food.image}
+              alt={food.name}
+            />
+            <div className='flex justify-between px-2 py-4 '>
+              <p className='font-bold text-xl'>{food.name}</p>
+              <p>
+                <span className=' bg-orange-600 p-1 text-white rounded-full '>
+                  {food.price}
+                </span>
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
