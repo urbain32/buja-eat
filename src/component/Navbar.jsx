@@ -20,7 +20,7 @@ export default function Navbar() {
           <AiOutlineMenu size={30} />
         </div>
         <h1 className='text-2xl sm:text-3xl lg:text-4xl px-2'>
-          Buja <span className='font-bold'>Eats</span>
+          Buja <span className='font-bold text-black'>Wine</span>
         </h1>
         <div className='hidden lg:flex bg-gray-200 p-1 items-center rounded-full text-[14px]'>
           <p className='bg-black text-white rounded-full p-2'>Delivery</p>
@@ -29,7 +29,7 @@ export default function Navbar() {
       </div>
       {/* search side */}
       <div className='bg-gray-200 flex items-center rounded-full px-2 w-[200px] sm:w-[400px] lg:w-[500px] '>
-        <AiOutlineSearch size={25} />
+        <AiOutlineSearch size={25}  />
         <input
           className='bg-transparent p-2 w-full focus:outline-none '
           type='text'
