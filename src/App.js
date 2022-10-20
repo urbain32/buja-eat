@@ -1,3 +1,4 @@
+import Category from "./component/Category";
 import Food from "./component/Food";
 import HeadlineCards from "./component/HeadlineCards";
 import Hero from "./component/Hero";
@@ -9,7 +10,8 @@ function App() {
       <Navbar />
       <Hero />
       <HeadlineCards />
-      <Food/>
+      <Food />
+      <Category/>
     </div>
   );
 }

@@ -133,14 +133,13 @@ export const categories = [
   {
     id: 1,
     name: 'Red Wine',
-    image:
-      'https://images.unsplash.com/photo-1606655762823-63f1cda5431f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+    image: 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c55c.png',
   },
   {
     id: 2,
     name: 'White Wine',
     image:
-      'https://e7.pngegg.com/pngimages/85/919/png-clipart-white-wine-red-wine-chardonnay-sauvignon-blanc-continental-white-wine-glass-wine-glass.png',
+      'https://www.kindpng.com/picc/m/5-50792_pouring-white-wine-glass-glass-of-white-wine.png',
   },
   {
     id: 3,
@@ -152,7 +151,7 @@ export const categories = [
     id: 4,
     name: 'Champagne',
     image:
-      'https://www.pngitem.com/pimgs/m/84-840421_champagne-clipart-7-clip-art-bottle-of-champagne.png',
+      'https://i.pinimg.com/736x/41/62/71/416271bc73ad90b1e424dc29eb7e2de0.jpg',
   },
   {
     id: 5,
