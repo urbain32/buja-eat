@@ -1,10 +1,10 @@
 export const data = [
   {
     id: 1,
-    name: 'Castago',
+    name: 'Corvo',
     category: 'red wine',
     image:
-      'https://images.unsplash.com/photo-1607013251379-e6eecfffe234?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60',
+      'https://images.unsplash.com/photo-1589910179170-8616d9cbcffe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
     price: '$$$$',
   },
   {
