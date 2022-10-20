@@ -1,8 +1,25 @@
 import { useState } from 'react';
 import { data } from '../data/data.js';
 export default function Food() {
-  //   console.log(data);
+  // console.log(data);
   const [foods, setFoods] = useState(data);
+  // Filter type by category
+  const filterType = (category) => {
+    setFoods(
+      data.filter((food) => {
+        return food.category === category;
+      })
+    );
+  };
+  // Filter  by price
+  const filterPrice = (price) => {
+    setFoods(
+      data.filter((food) => {
+        return food.price === price;
+      })
+    );
+  };
+
   return (
     <div className='max-w-[1640px] m-auto px-4 py-12  '>
       <h1 className='text-orange-600 font-bold text-4xl text-center '>
@@ -14,19 +31,34 @@ export default function Food() {
         <div>
           <p className='font-bold text-gray-700  '>Filter Type</p>
           <div className='flex justify-between flex-wrap '>
-            <button className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '>
+            <button
+              onClick={() => setFoods(data)}
+              className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '
+            >
               All
             </button>
-            <button className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '>
+            <button
+              onClick={() => filterType('red wine')}
+              className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '
+            >
               Red Wine
             </button>
-            <button className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '>
+            <button
+              onClick={() => filterType('white wine')}
+              className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '
+            >
               White Wite
             </button>
-            <button className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '>
+            <button
+              onClick={() => filterType('rose wine')}
+              className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '
+            >
               Rosè Wine
             </button>
-            <button className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '>
+            <button
+              onClick={() => filterType('champagne')}
+              className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '
+            >
               Champagne
             </button>
           </div>
@@ -35,16 +67,28 @@ export default function Food() {
         <div>
           <p className='font-bold text-gray-700  '>Filter Price</p>
           <div className='flex justify-between max-x-[390px] w-full'>
-            <button className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '>
+            <button
+              onClick={() => filterPrice('$')}
+              className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '
+            >
               $
             </button>
-            <button className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '>
+            <button
+              onClick={() => filterPrice('$$')}
+              className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '
+            >
               $$
             </button>
-            <button className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '>
+            <button
+              onClick={() => filterPrice('$$$')}
+              className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '
+            >
               $$$
             </button>
-            <button className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '>
+            <button
+              onClick={() => filterPrice('$$$$')}
+              className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white '
+            >
               $$$$
             </button>
           </div>
