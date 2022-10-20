@@ -31,7 +31,7 @@ export default function HeadlineCards() {
         {/* image */}
         <img
           className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl '
-          src='https://images.unsplash.com/photo-1611575189074-9dfbbceb258a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+          src='https://images.unsplash.com/photo-1556442281-77c90134c61f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
           alt='/'
         />
       </div>
@@ -39,9 +39,7 @@ export default function HeadlineCards() {
       <div className='relative rounded-xl '>
         {/* overlay */}
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white '>
-          <p className='font-bold text-2xl px-2 pt-4 '>
-            We do Deliver  Too
-          </p>
+          <p className='font-bold text-2xl px-2 pt-4 '>We do Deliver Too</p>
           <p className='px-2 '>Anywhere in Bujumbura</p>
           <button className='border-white bg-white text-black mx-2 bottom-4 absolute hover:bg-transparent hover:text-white '>
             Order Now
@@ -50,7 +48,7 @@ export default function HeadlineCards() {
         {/* image */}
         <img
           className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl '
-          src='https://images.pexels.com/photos/2647933/pexels-photo-2647933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+          src='https://images.unsplash.com/photo-1617347454431-f49d7ff5c3b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1630&q=80'
           alt='/'
         />
       </div>
